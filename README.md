@@ -32,9 +32,6 @@ public class Sample {
 }
 ~~~
 
-### TODO
-1. Implement caching of `json` data
-
 ### License
 This project is released under the MIT license. See the `LICENSE` file for a copy of the license.
 
