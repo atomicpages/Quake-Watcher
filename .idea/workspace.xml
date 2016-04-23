@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc631abc-eb87-421a-ba9b-493944623fe9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/io/FileIOHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/SimpleEarthquakeTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/all_hour.geojson" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/pretty_all_hour.geojson" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/EarthquakeService.java" afterPath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher.iml" afterPath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java" afterPath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java" />
     </list>
     <ignored path="edu.sdsu.watcher.quake.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,23 +48,7 @@
     <favorites_list name="edu.sdsu.watcher.quake" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="327">
-                <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-                <folding>
-                  <marker date="1461311532000" expanded="true" signature="593:809" placeholder="{...}" />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -228,7 +220,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2922414439000" />
+        <entry key="$PROJECT_DIR$" value="2922450278000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -402,15 +394,21 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/Coordinate.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/Earthquake.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/ExitCodes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/EarthquakeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/Sample.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/EarthquakeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/CoordinateTest.java" />
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/java/EarthquakeServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/EarthquakeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/EarthquakeServiceTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/io/FileNIOHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/io/FileIOHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/SimpleEarthquakeTest.java" />
       </list>
     </option>
   </component>
@@ -451,9 +449,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -489,6 +484,10 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -560,8 +559,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edu.sdsu.watcher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edu.sdsu.watcher.quake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -576,15 +608,41 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last.edited.regexp" value="Coordinate[longitude=-79.9398, latitude=0.3715, depth=19.16" />
+    <property name="last.edited.regexp" value="$USER_HOME$/Desktop/cache_test/" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="jsonre&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java&#10;struct&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java" />
   </component>
-  <component name="RunManager" selected="JUnit.EarthquakeTest.testGetNeatTimeFormat">
-    <configuration default="false" name="EarthquakeTest.testGetDescription" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SimpleEarthquakeTest">
+    <configuration default="false" name="SimpleEarthquakeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="edu.sdsu.watcher_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.sdsu.watcher.quake" />
+      <option name="MAIN_CLASS_NAME" value="edu.sdsu.watcher.quake.SimpleEarthquakeTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SimpleEarthquakeTest.testReadValidCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.sdsu.watcher.quake.*" />
@@ -595,8 +653,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.sdsu.watcher.quake" />
-      <option name="MAIN_CLASS_NAME" value="edu.sdsu.watcher.quake.EarthquakeTest" />
-      <option name="METHOD_NAME" value="testGetDescription" />
+      <option name="MAIN_CLASS_NAME" value="edu.sdsu.watcher.quake.SimpleEarthquakeTest" />
+      <option name="METHOD_NAME" value="testReadValidCache" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -610,7 +668,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EarthquakeTest.testGetId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SimpleEarthquakeTest.testCacheDataLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.sdsu.watcher.quake.*" />
@@ -621,8 +679,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.sdsu.watcher.quake" />
-      <option name="MAIN_CLASS_NAME" value="edu.sdsu.watcher.quake.EarthquakeTest" />
-      <option name="METHOD_NAME" value="testGetId" />
+      <option name="MAIN_CLASS_NAME" value="edu.sdsu.watcher.quake.SimpleEarthquakeTest" />
+      <option name="METHOD_NAME" value="testCacheDataLength" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -636,7 +694,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EarthquakeTest.testGetTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SimpleEarthquakeTest.testCacheDirCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.sdsu.watcher.quake.*" />
@@ -647,8 +705,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.sdsu.watcher.quake" />
-      <option name="MAIN_CLASS_NAME" value="edu.sdsu.watcher.quake.EarthquakeTest" />
-      <option name="METHOD_NAME" value="testGetTime" />
+      <option name="MAIN_CLASS_NAME" value="edu.sdsu.watcher.quake.SimpleEarthquakeTest" />
+      <option name="METHOD_NAME" value="testCacheDirCreation" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -662,7 +720,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EarthquakeTest.testGetNeatTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SimpleEarthquakeTest.testCacheStorage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.sdsu.watcher.quake.*" />
@@ -673,34 +731,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.sdsu.watcher.quake" />
-      <option name="MAIN_CLASS_NAME" value="edu.sdsu.watcher.quake.EarthquakeTest" />
-      <option name="METHOD_NAME" value="testGetNeatTime" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="EarthquakeTest.testGetNeatTimeFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="edu.sdsu.watcher.quake.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="edu.sdsu.watcher_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="edu.sdsu.watcher.quake" />
-      <option name="MAIN_CLASS_NAME" value="edu.sdsu.watcher.quake.EarthquakeTest" />
-      <option name="METHOD_NAME" value="testGetNeatTimeFormat" />
+      <option name="MAIN_CLASS_NAME" value="edu.sdsu.watcher.quake.SimpleEarthquakeTest" />
+      <option name="METHOD_NAME" value="testCacheStorage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -973,19 +1005,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.EarthquakeTest.testGetDescription" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.EarthquakeTest.testGetId" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EarthquakeTest.testGetTime" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EarthquakeTest.testGetNeatTime" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EarthquakeTest.testGetNeatTimeFormat" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SimpleEarthquakeTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SimpleEarthquakeTest.testReadValidCache" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SimpleEarthquakeTest.testCacheDataLength" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SimpleEarthquakeTest.testCacheDirCreation" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SimpleEarthquakeTest.testCacheStorage" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EarthquakeTest.testGetNeatTimeFormat" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EarthquakeTest.testGetNeatTime" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EarthquakeTest.testGetTime" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EarthquakeTest.testGetId" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.EarthquakeTest.testGetDescription" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SimpleEarthquakeTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SimpleEarthquakeTest.testCacheStorage" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SimpleEarthquakeTest.testCacheDirCreation" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SimpleEarthquakeTest.testCacheDataLength" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SimpleEarthquakeTest.testReadValidCache" />
       </list>
     </recent_temporary>
   </component>
@@ -1006,55 +1038,54 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EarthquakeTest - 2016.04.22 at 00h 41m 29s.xml">
-      <configuration name="EarthquakeTest" configurationId="JUnit" />
+    <history-entry file="SimpleEarthquakeTest - 2016.04.23 at 01h 34m 39s.xml">
+      <configuration name="SimpleEarthquakeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthquakeTest_testFailingGetCoordinate - 2016.04.22 at 00h 43m 40s.xml">
-      <configuration name="EarthquakeTest.testFailingGetCoordinate" configurationId="JUnit" />
+    <history-entry file="SimpleEarthquakeTest - 2016.04.23 at 01h 39m 14s.xml">
+      <configuration name="SimpleEarthquakeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthquakeTest_testFailingGetCoordinate - 2016.04.22 at 00h 43m 51s.xml">
-      <configuration name="EarthquakeTest.testFailingGetCoordinate" configurationId="JUnit" />
+    <history-entry file="SimpleEarthquakeTest - 2016.04.23 at 01h 47m 04s.xml">
+      <configuration name="SimpleEarthquakeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthquakeTest_testGetCoordinate - 2016.04.22 at 00h 42m 53s.xml">
-      <configuration name="EarthquakeTest.testGetCoordinate" configurationId="JUnit" />
+    <history-entry file="SimpleEarthquakeTest_testCacheDataLength - 2016.04.23 at 01h 35m 27s.xml">
+      <configuration name="SimpleEarthquakeTest.testCacheDataLength" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthquakeTest_testGetDescription - 2016.04.22 at 00h 45m 13s.xml">
-      <configuration name="EarthquakeTest.testGetDescription" configurationId="JUnit" />
+    <history-entry file="SimpleEarthquakeTest_testCacheDirCreation - 2016.04.23 at 01h 40m 50s.xml">
+      <configuration name="SimpleEarthquakeTest.testCacheDirCreation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthquakeTest_testGetId - 2016.04.22 at 00h 45m 51s.xml">
-      <configuration name="EarthquakeTest.testGetId" configurationId="JUnit" />
+    <history-entry file="SimpleEarthquakeTest_testCacheStorage - 2016.04.23 at 01h 44m 12s.xml">
+      <configuration name="SimpleEarthquakeTest.testCacheStorage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthquakeTest_testGetMagnitude - 2016.04.22 at 00h 44m 32s.xml">
-      <configuration name="EarthquakeTest.testGetMagnitude" configurationId="JUnit" />
+    <history-entry file="SimpleEarthquakeTest_testCacheStorage - 2016.04.23 at 01h 44m 20s.xml">
+      <configuration name="SimpleEarthquakeTest.testCacheStorage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthquakeTest_testGetNeatTime - 2016.04.22 at 00h 46m 55s.xml">
-      <configuration name="EarthquakeTest.testGetNeatTime" configurationId="JUnit" />
+    <history-entry file="SimpleEarthquakeTest_testCacheStorage - 2016.04.23 at 01h 44m 39s.xml">
+      <configuration name="SimpleEarthquakeTest.testCacheStorage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthquakeTest_testGetNeatTimeFormat - 2016.04.22 at 00h 49m 03s.xml">
-      <configuration name="EarthquakeTest.testGetNeatTimeFormat" configurationId="JUnit" />
+    <history-entry file="SimpleEarthquakeTest_testCacheStorage - 2016.04.23 at 01h 44m 49s.xml">
+      <configuration name="SimpleEarthquakeTest.testCacheStorage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthquakeTest_testGetTime - 2016.04.22 at 00h 46m 22s.xml">
-      <configuration name="EarthquakeTest.testGetTime" configurationId="JUnit" />
+    <history-entry file="SimpleEarthquakeTest_testCacheStorage - 2016.04.23 at 01h 46m 50s.xml">
+      <configuration name="SimpleEarthquakeTest.testCacheStorage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32547864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3240059" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842416" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32547864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17238913" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2267525" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1066,6 +1097,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1081,7 +1113,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1090,21 +1122,67 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="990">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/EarthquakeService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/io/FileIOHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="26" column="101" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/SimpleEarthquakeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,9 +1190,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,37 +1205,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4046#4047#0" expanded="false" />
-            <element signature="e#4069#4070#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/BinaryTree.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/EarthquakeService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,9 +1232,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,7 +1240,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,11 +1247,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4046#4047#0" expanded="false" />
-            <element signature="e#4069#4070#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1212,7 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1220,36 +1276,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
           <caret line="829" column="16" selection-start-line="829" selection-start-column="16" selection-end-line="829" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/service/QuakeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/factories/DecodeJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/service/QuakeService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/BinaryTree.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1262,25 +1293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/factories/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1292,47 +1304,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/EarthquakeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/Sample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/Sample.java" />
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1348,26 +1324,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#1612#1613#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1701#1702#0" expanded="true" />
-            <element signature="e#1745#1746#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1383,7 +1339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1391,15 +1346,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/factories/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="75">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1411,13 +1388,109 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="327">
-            <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-            <folding>
-              <marker date="1461311532000" expanded="true" signature="593:809" placeholder="{...}" />
-            </folding>
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/io/FileIOHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/factories/DecodeJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all_hour.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/91a4d115400e904f22b03a78deb355e9ea803cd4/guava-19.0-sources.jar!/com/google/common/base/Preconditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="107" column="40" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/all_hour.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/pretty_all_hour.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-832">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/AfterClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache_data/significant_week.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/SimpleEarthquakeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="161" column="35" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

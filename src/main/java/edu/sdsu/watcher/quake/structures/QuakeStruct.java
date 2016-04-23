@@ -3,13 +3,15 @@ package edu.sdsu.watcher.quake.structures;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.sdsu.watcher.quake.SimpleEarthquake;
+
 /**
  * <p>Mirrors the structure of the {@code json} file we pull from usgs.gov to the tee.
  * The idea with this "struct" is that all the methods/values ultimately are read-only.
  * We only want one instance of this struct floating around at any given time
  * be it a multithreaded environment or otherwise.</p>
  * <p>A design choice of this class is to give users <strong>all</strong> information possible
- * that we're given from usgs. Additional processing is done in {@link edu.sdsu.watcher.quake.EarthquakeService}
+ * that we're given from usgs. Additional processing is done in {@link SimpleEarthquake}
  * so we strip the "necessary" information for one particular use case.</p>
  */
 public class QuakeStruct {

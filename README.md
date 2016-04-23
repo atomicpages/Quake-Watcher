@@ -14,6 +14,8 @@ An example URL can be seen here: http://earthquake.usgs.gov/earthquakes/feed/v1.
 
 ### Sample Usage
 ~~~java
+import edu.sdsu.watcher.quake.EarthquakeService;
+
 import java.util.List;
 
 public class Sample {
@@ -32,7 +34,6 @@ public class Sample {
 
 ### TODO
 1. Implement caching of `json` data
-2. Add unit tests
 
 ### License
 This project is released under the MIT license. See the `LICENSE` file for a copy of the license.

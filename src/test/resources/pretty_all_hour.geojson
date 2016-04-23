@@ -1,0 +1,93 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1461399586000,
+    "url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
+    "title": "USGS All Earthquakes, Past Hour",
+    "status": 200,
+    "api": "1.5.2",
+    "count": 2
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.93,
+        "place": "5km SSE of Hemet, CA",
+        "time": 1461399067480,
+        "updated": 1461399363577,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/ci37335775",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci37335775.geojson",
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 13,
+        "net": "ci",
+        "code": "37335775",
+        "ids": ",ci37335775,",
+        "sources": ",ci,",
+        "types": ",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 29,
+        "dmin": 0.03194,
+        "rms": 0.13,
+        "gap": 40,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.9 - 5km SSE of Hemet, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.9568333,
+          33.7033333,
+          15.06
+        ]
+      },
+      "id": "ci37335775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.68,
+        "place": "20km SSE of King City, California",
+        "time": 1461396284180,
+        "updated": 1461397143467,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/nc72626465",
+        "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc72626465.geojson",
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 43,
+        "net": "nc",
+        "code": "72626465",
+        "ids": ",nc72626465,",
+        "sources": ",nc,",
+        "types": ",general-link,geoserve,nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 10,
+        "dmin": 0.1074,
+        "rms": 0.08,
+        "gap": 127,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 1.7 - 20km SSE of King City, California"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.043335,
+          36.0444984,
+          9.6
+        ]
+      },
+      "id": "nc72626465"
+    }
+  ],
+  "bbox": [
+    -121.043335,
+    33.7033333,
+    9.6,
+    -116.9568333,
+    36.0444984,
+    15.06
+  ]
+}
