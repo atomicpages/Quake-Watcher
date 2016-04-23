@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc631abc-eb87-421a-ba9b-493944623fe9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher.iml" afterPath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/edu.sdsu.watcher_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java" afterPath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java" />
     </list>
     <ignored path="edu.sdsu.watcher.quake.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,9 +42,19 @@
       <file leaf-file-name="Cache.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="353">
+              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1154#1155#0" expanded="true" />
+                <element signature="e#1209#1210#0" expanded="true" />
+                <element signature="e#2823#2824#0" expanded="true" />
+                <element signature="e#2857#2858#0" expanded="true" />
+                <element signature="e#2935#2936#0" expanded="true" />
+                <element signature="e#2958#2959#0" expanded="true" />
+                <element signature="e#3036#3037#0" expanded="true" />
+                <element signature="e#3059#3060#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +62,8 @@
       <file leaf-file-name="SimpleEarthquake.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="133" column="12" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+            <state relative-caret-position="225">
+              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -236,7 +241,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2922506093000" />
+        <entry key="$PROJECT_DIR$" value="2922551657000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -466,8 +471,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -577,6 +580,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1066,7 +1071,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32452276" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2267525" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2074392" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1109,7 +1114,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2857#2858#0" expanded="true" />
+            <element signature="e#2935#2936#0" expanded="true" />
+            <element signature="e#2958#2959#0" expanded="true" />
+            <element signature="e#3036#3037#0" expanded="true" />
+            <element signature="e#3059#3060#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1402,17 +1417,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="91">
             <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1425,17 +1440,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="133" column="12" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+        <state relative-caret-position="225">
+          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="353">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2857#2858#0" expanded="true" />
+            <element signature="e#2935#2936#0" expanded="true" />
+            <element signature="e#2958#2959#0" expanded="true" />
+            <element signature="e#3036#3037#0" expanded="true" />
+            <element signature="e#3059#3060#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
