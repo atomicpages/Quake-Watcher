@@ -61,11 +61,6 @@ public class EarthquakeTest {
 	}
 
 	@Test
-	public void testGetNeatTime() {
-		assert e1.getNeatDate().equals("Sat Apr 16 16:58:37 PDT 2016");
-	}
-
-	@Test
 	public void testHashCode() {
 		assert e1.hashCode() == e2.hashCode();
 	}
