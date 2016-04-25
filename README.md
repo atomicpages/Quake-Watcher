@@ -1,6 +1,8 @@
 Quake Watcher
 =============
 
+[![Build Status](https://travis-ci.org/atomicpages/Quake-Watcher.svg?branch=master)](https://travis-ci.org/atomicpages/Quake-Watcher) [![Build Status](https://ci.appveyor.com/api/projects/status/github/atomicpages/quake-watcher?svg=true)](https://ci.appveyor.com/project/atomicpages/quake-watcher)
+
 Quake Watcher was born out of an existing project with a cumbersome Java API. This version of Quake Watcher has an equally robust API that allows us to query data from usgs.gov, run analysis on the data, and cache the data for local processing.
 
 An example URL can be seen here: http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson

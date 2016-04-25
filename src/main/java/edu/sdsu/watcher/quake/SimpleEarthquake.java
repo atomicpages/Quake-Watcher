@@ -259,4 +259,8 @@ public class SimpleEarthquake {
 		return gson.toJson(new JsonParser().parse(uglyJson));
 	}
 
+	public static void main(String... args) {
+
+	}
+
 }
