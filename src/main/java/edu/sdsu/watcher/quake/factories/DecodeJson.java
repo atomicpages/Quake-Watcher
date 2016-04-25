@@ -17,9 +17,9 @@ import com.google.gson.Gson;
  */
 public final class DecodeJson {
 
-	private DecodeJson() {}
+	private static final Gson GSON = new Gson();
 
-	private static Gson GSON = new Gson();
+	private DecodeJson() {}
 
 	/**
 	 *

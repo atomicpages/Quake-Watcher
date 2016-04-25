@@ -10,9 +10,6 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import com.google.common.base.Preconditions;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
 import edu.sdsu.watcher.quake.cache.Cache;
 import edu.sdsu.watcher.quake.factories.DecodeJson;
 import edu.sdsu.watcher.quake.net.JsonReader;
@@ -51,9 +48,11 @@ public class SimpleEarthquake {
 	}
 
 	private boolean online;
-	private boolean cacheJson, enablePrettyCache;
+	private boolean cacheJson;
+//	private boolean enablePrettyCache;
 	private File cacheFile;
-	private Cache cache, prettyCache;
+	private Cache cache;
+//	private Cache prettyCache;
 
 	/**
 	 * Reads live data from the USGS website.
@@ -61,7 +60,7 @@ public class SimpleEarthquake {
 	public SimpleEarthquake() {
 		this.online = true;
 		this.cacheJson = false;
-		this.enablePrettyCache = false;
+//		this.enablePrettyCache = false;
 	}
 
 	/**
@@ -247,20 +246,16 @@ public class SimpleEarthquake {
 		return new Earthquake(new Coordinate(lon, lat, depth), magnitude, description, id, time);
 	}
 
-	/**
-	 * @param uglyJson the ugly {@code json} string to beautify.
-	 * @return the beautified {@code json} string.
-	 */
-	private static String prettyPrintJson(String uglyJson) {
-		Preconditions.checkNotNull(uglyJson);
-		Preconditions.checkArgument(!uglyJson.isEmpty());
-
-		final Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		return gson.toJson(new JsonParser().parse(uglyJson));
-	}
-
-	public static void main(String... args) {
-
-	}
+//	/**
+//	 * @param uglyJson the ugly {@code json} string to beautify.
+//	 * @return the beautified {@code json} string.
+//	 */
+//	private static String prettyPrintJson(String uglyJson) {
+//		Preconditions.checkNotNull(uglyJson);
+//		Preconditions.checkArgument(!uglyJson.isEmpty());
+//
+//		final Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//		return gson.toJson(new JsonParser().parse(uglyJson));
+//	}
 
 }
