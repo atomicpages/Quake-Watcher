@@ -1,7 +1,7 @@
 Quake Watcher
 =============
 
-[![Build Status](https://travis-ci.org/atomicpages/Quake-Watcher.svg?branch=master)](https://travis-ci.org/atomicpages/Quake-Watcher) [![Build Status](https://ci.appveyor.com/api/projects/status/github/atomicpages/quake-watcher?svg=true)](https://ci.appveyor.com/project/atomicpages/quake-watcher)
+[![Build Status](https://travis-ci.org/atomicpages/Quake-Watcher.svg?branch=master)](https://travis-ci.org/atomicpages/Quake-Watcher) [![Build Status](https://ci.appveyor.com/api/projects/status/github/atomicpages/quake-watcher?svg=true)](https://ci.appveyor.com/project/atomicpages/quake-watcher) [![Codacy Badge](https://api.codacy.com/project/badge/grade/560cbef77eb345939b509de1892b29f4)](https://www.codacy.com/app/atomicpages/Quake-Watcher)
 
 Quake Watcher was born out of an existing project with a cumbersome Java API. This version of Quake Watcher has an equally robust API that allows us to query data from usgs.gov, run analysis on the data, and cache the data for local processing.
 
