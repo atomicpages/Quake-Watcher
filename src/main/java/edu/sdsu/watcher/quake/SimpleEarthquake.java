@@ -27,6 +27,7 @@ import edu.sdsu.watcher.quake.structures.QuakeStruct;
  */
 public class SimpleEarthquake {
 
+	private static final boolean APPEND_TIMESTAMP_DEFAULT = true;
 	private static final Reader jsonReader = JsonReader.getInstance();
 	private static final String USGS_URL = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/";
 
@@ -59,6 +60,17 @@ public class SimpleEarthquake {
 	 */
 	public SimpleEarthquake() {
 		this.online = true;
+		this.cacheJson = false;
+		this.enablePrettyCache = false;
+	}
+
+	/**
+	 * @param cacheFile Set true to cache the downloaded {@code geojson} file.
+	 * @param location  The path of the file without the file (this will be created automatically).
+	 * @see SimpleEarthquake#SimpleEarthquake(boolean, String, boolean)
+	 */
+	public SimpleEarthquake(final boolean cacheFile, final String location) {
+		this(cacheFile, location, APPEND_TIMESTAMP_DEFAULT);
 	}
 
 	/**
@@ -74,19 +86,19 @@ public class SimpleEarthquake {
 	 *
 	 * @param cacheFile Set true to cache the downloaded {@code geojson} file.
 	 * @param location  The path of the file without the file (this will be created automatically).
+	 * @param appendTimestamp Set true to append the timestamp to the name of the Cache file.
 	 */
-	public SimpleEarthquake(final boolean cacheFile, final String location) {
+	public SimpleEarthquake(final boolean cacheFile, final String location, boolean appendTimestamp) {
 		this();
 		this.cacheJson = cacheFile;
 
 		if(this.cacheJson) {
-			this.cache = new Cache(null, location);
+			this.cache = new Cache(null, location, appendTimestamp);
 		}
 	}
 
 	/**
 	 * Reads a local file and uses cached data.
-	 *
 	 * @param file the cached {@code json} file to read from.
 	 */
 	public SimpleEarthquake(final File file) {
@@ -163,7 +175,6 @@ public class SimpleEarthquake {
 
 	/**
 	 * <p>Gets a list of <strong>all</strong> earthquakes found within a week time frame.</p>
-	 *
 	 * @return a list of earthquakes or an empty list if none are found.
 	 * @see SimpleEarthquake#getEarthquakes(String, String)
 	 */
@@ -246,10 +257,6 @@ public class SimpleEarthquake {
 
 		final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		return gson.toJson(new JsonParser().parse(uglyJson));
-	}
-
-	public static void main(String... args) {
-		new SimpleEarthquake(true, "/Users/dennis/Desktop/cache_data/").getEarthquakes("all", "hour");
 	}
 
 }

@@ -68,7 +68,6 @@ public class Cache {
 	public Cache(String fileName, String location, String extension, boolean appendTimestamp) {
 		Preconditions.checkNotNull(location, extension);
 		Preconditions.checkArgument(!location.isEmpty());
-		Preconditions.checkArgument(location.matches(".*[^\\.\\w+]$"), "Malformed cache location. Missing trailing slash."); // make no attempt to fix the location
 		Preconditions.checkArgument(extension.matches("\\.\\w+"));
 
 		this.extension = extension;
