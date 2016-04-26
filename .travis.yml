@@ -3,5 +3,9 @@ jdk:
   - oraclejdk8
 os:
   - linux
+sudo: false
+branches:
+  except:
+    - gh-pages
 after_success:
   - bash <(curl -s https://codecov.io/bash)

@@ -10,9 +10,8 @@ test_script:
   - gradlew.bat check --info --no-daemon -PbintrayUserName -PbintrayApiKey
 
 branches:
-  only:
-    - master
-    - dev/master
+  except:
+    - gh-pages
 
 cache:
   - C:\Users\appveyor\.gradle
