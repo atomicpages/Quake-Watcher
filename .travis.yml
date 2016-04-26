@@ -1,11 +1,16 @@
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
 os:
-  - linux
+- linux
 sudo: false
 branches:
   except:
-    - gh-pages
+  - gh-pages
+script: ./gradlew test check build fatJar javadoc --info --stacktrace
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash)
+- .utilities/push-javadoc-to-gh-pages.sh
+env:
+  global:
+    secure: 06xVQ+suB8EwQ10XN/1r6cBof92GRS2vzGqystb0kQpm86dZxQG/k+WJooUIlCelGzLByKSaN/ij/sbGWcbuA9jvBS21f8BVwgiSrG/6vD3Vx1Bigxob14j4N/IZ76adKI5AxFVlK+jVpaYxyUbLP1/3inVbhMxDZwLKcDa5HCc1ldFo/koFB6/O5x/k0j9fKyUSwcWSrdYIQLWd5yXNUDTMaaaPSllwqbm3aU4jVBGSNAcNCGtQs90A6p/T5KaweU5zv+S+ClZCVIVDftQ6G+RbJthTipfJaadoXk1t9CcO2mk5Tm87OzRVtaZGyDegqUjnhqn49Dp7cp+YnpP3xFWyAvRDO6ApGzldgMOpDHk0WAP9Q6fAldGYS6tDpUuwnv/x0aiqypUXCoM5BzSefI5t+9g64K7U3EGutw+cgqGBs/AH/5VElwWIbHD9MPvEXEHFpdriQURJtlVqid3G4USvmr+Hu0PSKQ+ww45vVOkH0kdIrTU+qIreqo8z03NHO2Yk6aw44J9vHtbSqsK5rooQDRqn8hOnQw5G41zgUCVGHMHnEb9yBVSOHXTiyJzHBZEA/k9Iyt7EK9eW9tKzN4snHO9Y0SJBepS90wnHbt/e1Uy1z71ppp7ZxNsZtMow5OQRoJZyoEDuYhMrsJ0+EAgm6Hr1L7mg4zbj0daRCwk=
