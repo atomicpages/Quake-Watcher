@@ -72,12 +72,12 @@ public class SimpleEarthquakeTest {
 		assert Files.exists(Paths.get("cache_data", "significant_week.json"));
 	}
 
-	@Test
-	public void testCacheStorageAlt() {
-		usgsCacheLiveDataAlt.getEarthquakes("significant", "week");
-		findFiles(Paths.get(Shared.BUILD_RESOURCES_PATH), "^significant_week_\\d+");
-		assert Files.exists(Paths.get("cache_data", "significant_week.json"));
-	}
+//	@Test
+//	public void testCacheStorageAlt() {
+//		usgsCacheLiveDataAlt.getEarthquakes("significant", "week");
+//		findFiles(Paths.get(Shared.BUILD_RESOURCES_PATH), "^significant_week_\\d+");
+//		assert Files.exists(Paths.get("cache_data", "significant_week.json"));
+//	}
 
 	@AfterClass
 	public static void cleanup() throws IOException {

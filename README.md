@@ -15,6 +15,10 @@ An example URL can be seen here: http://earthquake.usgs.gov/earthquakes/feed/v1.
 * Easily extensible to your own project
 * Simple file caching system
 
+### Documentation
+* Docs can be found [here](http://atomicpages.github.io/Quake-Watcher/).
+* Docs at this time are pushed menually to the `gh-pages` branch.
+
 
 ### Sample Usage
 ~~~java
@@ -40,6 +44,6 @@ public class Sample {
 This project is released under the MIT license. See the `LICENSE` file for a copy of the license.
 
 ### Author
-Created by Dennis Thompson for the Computer Science department at [SDSU](http://www.cs.sdsu.edu/).
+Created by [Dennis Thompson](https://www.linkedin.com/in/dennisthompson11) for the Computer Science department at [SDSU](http://www.cs.sdsu.edu/).
 
 ### Contributors

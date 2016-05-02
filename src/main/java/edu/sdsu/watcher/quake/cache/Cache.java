@@ -134,7 +134,6 @@ public class Cache {
 	 * @throws IOException Thrown upon error when writing to the file.
 	 */
 	public void create(String content) throws IOException {
-		Preconditions.checkNotNull(this.path);
 		CacheWriter.create(this.path, content);
 	}
 
@@ -142,7 +141,6 @@ public class Cache {
 	 * @return True if the operation was successful.
 	 */
 	public boolean delete() {
-		Preconditions.checkNotNull(this.path);
 		return CacheWriter.delete(this.path);
 	}
 
@@ -154,7 +152,8 @@ public class Cache {
 	}
 
 	private void initialize() {
-		Path path = null;
+		Path path;
+		final Path location = Paths.get(this.location);
 
 		if(this.name != null && !this.name.isEmpty()) {
 			this.path = path = Paths.get(this.location, this.name);
@@ -162,14 +161,13 @@ public class Cache {
 			path = Paths.get(this.location);
 		}
 
-		if(!Files.exists(path)) {
-			FileIOHelper.createDirectory(path);
+		if(Files.notExists(location)) {
+			FileIOHelper.createDirectory(location);
 		}
 	}
 
 	private static String normalizeExtension(String ext) {
-		Preconditions.checkNotNull(ext);
-		Preconditions.checkArgument(!ext.isEmpty() && ext.matches("^\\.?\\w+"));
+//		Preconditions.checkArgument(!ext.isEmpty() && ext.matches("^\\.?\\w+"));
 
 		if(ext.charAt(0) != '.') {
 			ext = "." + ext;
