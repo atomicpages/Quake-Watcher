@@ -4,13 +4,16 @@ import org.junit.Test;
 
 public class EarthquakeTest {
 
-	static Earthquake e1, e2, e3;
+	static Earthquake e1, e2, e3, e4, e5, e6;
 
 	// TODO: populate with random data
 	static {
 		e1 = new Earthquake(CoordinateTest.c1, 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
 		e2 = new Earthquake(CoordinateTest.c2, 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
-		e3 = new Earthquake(CoordinateTest.c1, 6.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
+		e3 = new Earthquake(CoordinateTest.c1, 6.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 123L);
+		e4 = new Earthquake(CoordinateTest.c1, 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1560851117280L);
+		e5 = new Earthquake(CoordinateTest.c3, 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
+		e6 = new Earthquake(CoordinateTest.c1, 7.8, "M 7.8 - 123km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
 	}
 
 	@Test
@@ -19,8 +22,38 @@ public class EarthquakeTest {
 	}
 
 	@Test
+	public void testEqualsNull() {
+		assert !e1.equals(null);
+	}
+
+	@Test
 	public void testInequality() {
 		assert !e1.equals(e3);
+	}
+
+	@Test
+	public void testSameObjectEquals() {
+		assert e1.equals(e1);
+	}
+
+	@Test
+	public void testDiffObjects() {
+		assert !e1.equals(new Object());
+	}
+
+	@Test
+	public void testTimeDiff() {
+		assert !e1.equals(e4);
+	}
+
+	@Test
+	public void testCoordinateDiff() {
+		assert !e1.equals(e5);
+	}
+
+	@Test
+	public void testDescriptionDiff() {
+		assert !e1.equals(e6);
 	}
 
 	@Test
@@ -68,6 +101,11 @@ public class EarthquakeTest {
 	@Test
 	public void testHashCodeFailing() {
 		assert e1.hashCode() != e3.hashCode();
+	}
+
+	@Test
+	public void testToString() {
+		assert e1.toString().equals(e2.toString());
 	}
 
 }

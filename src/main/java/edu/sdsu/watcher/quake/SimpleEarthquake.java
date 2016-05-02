@@ -18,9 +18,10 @@ import edu.sdsu.watcher.quake.structures.QuakeStruct;
 
 /**
  * Handles the details of getting the data from the remote or local resource,
- * filtering the data, and returning the user with usable data.
- *
+ * filtering the data, and returning the user with usable data. Uses
+ * {@link okhttp3.OkHttpClient} to handle the specific of the Http requests.
  * @author Dennis Thompson
+ * @version 1.1
  */
 public class SimpleEarthquake {
 
@@ -102,7 +103,7 @@ public class SimpleEarthquake {
 	 */
 	public SimpleEarthquake(final File file) {
 		Preconditions.checkNotNull(file);
-		Preconditions.checkArgument(file.exists() && file.canRead());
+		Preconditions.checkArgument(file.exists());
 		this.online = false;
 		this.cacheFile = file;
 	}

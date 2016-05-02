@@ -4,18 +4,45 @@ import org.junit.Test;
 
 public class CoordinateTest {
 
-	static Coordinate c1, c2, c3;
+	static Coordinate c1, c2, c3, c4, c5;
 
 	// TODO: populate with random data
 	static {
 		c1 = new Coordinate(-79.9398, 0.3715, 19.16);
 		c2 = new Coordinate(-79.9398, 0.3715, 19.16);
-		c3 = new Coordinate(79.9398, 0.3715, 19.16);
+		c3 = new Coordinate(79.9398, -0.3715, 17.5);
+		c4 = new Coordinate(-79.9398, -0.3715, 19.16);
+		c5 = new Coordinate(-79.9398, 0.3715, 0.16);
 	}
 
 	@Test
 	public void testEquals() {
 		assert c1.equals(c2);
+	}
+
+	@Test
+	public void testEqualsNull() {
+		assert !c1.equals(null);
+	}
+
+	@Test
+	public void testLatDiff() {
+		assert !c1.equals(c4);
+	}
+
+	@Test
+	public void testDepthDiff() {
+		assert !c1.equals(c5);
+	}
+
+	@Test
+	public void testSameObjectEquals() {
+		assert c1.equals(c1);
+	}
+
+	@Test
+	public void testDiffObjects() {
+		assert !c1.equals(new Object());
 	}
 
 	@Test

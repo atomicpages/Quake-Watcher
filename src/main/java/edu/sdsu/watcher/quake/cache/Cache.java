@@ -76,7 +76,7 @@ public class Cache {
 
 		if(this.name != null && !this.name.isEmpty()) {
 			if(this.appendTimestamp) {
-				this.name += TIME;
+				this.name += "_" + TIME;
 			}
 			this.name += normalizeExtension(extension);
 		}

@@ -1,11 +1,9 @@
 package edu.sdsu.watcher.quake.net;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
 
-import edu.sdsu.watcher.quake.ExitCodes;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
 
 /**
  * A singleton that grabs a remote {@code json} String and stores the
@@ -31,27 +29,14 @@ public final class JsonReader implements Reader {
 	 * Gets a remote resource and returns a String of said resource.
 	 * @param url The URL to read from.
 	 * @return A String representing what was read from the URL.
+	 * @see OkHttpClient
 	 */
-	public String get(final String url) {
+	public String get(final String url) throws IOException {
 		checkArgs(url);
+		final OkHttpClient client = new OkHttpClient();
 
-		final StringBuilder buffer = new StringBuilder();
-		try {
-			final URL json = new URL(url);
-			final BufferedReader in = new BufferedReader(new InputStreamReader(json.openStream()));
-
-			String line;
-			while ((line = in.readLine()) != null) {
-				buffer.append(line);
-			}
-
-			in.close();
-		} catch(IOException e) {
-			e.printStackTrace();
-			System.exit(ExitCodes.NET_READ_ERROR);
-		}
-
-		return buffer.toString();
+		final Request request = new Request.Builder().url(url).build();
+		return client.newCall(request).execute().body().string();
 	}
 
 	/**
