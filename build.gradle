@@ -17,6 +17,10 @@ task fatJar(type: Jar) {
     with jar
 }
 
+jacoco {
+    toolVersion = "0.7.4+"
+}
+
 jacocoTestReport {
     reports {
         xml.enabled = true

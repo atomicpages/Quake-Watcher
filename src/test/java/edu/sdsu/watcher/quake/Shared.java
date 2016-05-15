@@ -8,8 +8,13 @@ public class Shared {
 	public static final String FS = System.getProperty("file.separator");
 
 	static {
-		int index = RESOURCES_PATH.lastIndexOf("test" + FS);
-		RESOURCES_PATH = RESOURCES_PATH.substring(0, index) + "test" + FS;
+		int index = RESOURCES_PATH.lastIndexOf("test/");
+		int start = 0;
+		if(System.getProperty("os.name").contains("Windows")) {
+			start = 3;
+		}
+
+		RESOURCES_PATH = RESOURCES_PATH.substring(start, index) + "test/";
 	}
 
 	private static String repairPath(String path, int index) {
