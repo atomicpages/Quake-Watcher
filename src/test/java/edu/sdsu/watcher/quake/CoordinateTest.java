@@ -88,4 +88,16 @@ public class CoordinateTest {
 		assert c1.toString().equals("Coordinate[longitude=-79.9398, latitude=0.3715, depth=19.16]");
 	}
 
+	public static Coordinate getC1() {
+		return c1;
+	}
+
+	public static Coordinate getC2() {
+		return c2;
+	}
+
+	public static Coordinate getC3() {
+		return c3;
+	}
+
 }

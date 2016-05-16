@@ -9,12 +9,12 @@ public class EarthquakeTest {
 
 	@BeforeClass
 	public static void setup() {
-		e1 = new Earthquake(CoordinateTest.c1, 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
-		e2 = new Earthquake(CoordinateTest.c2, 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
-		e3 = new Earthquake(CoordinateTest.c1, 6.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 123L);
-		e4 = new Earthquake(CoordinateTest.c1, 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1560851117280L);
-		e5 = new Earthquake(CoordinateTest.c3, 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
-		e6 = new Earthquake(CoordinateTest.c1, 7.8, "M 7.8 - 123km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
+		e1 = new Earthquake(CoordinateTest.getC1(), 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
+		e2 = new Earthquake(CoordinateTest.getC2(), 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
+		e3 = new Earthquake(CoordinateTest.getC1(), 6.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 123L);
+		e4 = new Earthquake(CoordinateTest.getC1(), 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1560851117280L);
+		e5 = new Earthquake(CoordinateTest.getC3(), 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
+		e6 = new Earthquake(CoordinateTest.getC3(), 7.8, "M 7.8 - 123km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
 	}
 
 	@Test
