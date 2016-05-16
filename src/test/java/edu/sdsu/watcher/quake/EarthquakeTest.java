@@ -59,14 +59,14 @@ public class EarthquakeTest {
 
 	@Test
 	public void testGetCoordinate() {
-		assert e1.getCoordinate().equals(CoordinateTest.c1)
-				&& e1.getCoordinate() == CoordinateTest.c1;
+		assert e1.getCoordinate().equals(CoordinateTest.getC1())
+				&& e1.getCoordinate() == CoordinateTest.getC1();
 	}
 
 	@Test
 	public void testFailingGetCoordinate() {
-		assert e1.getCoordinate().equals(CoordinateTest.c1)
-				&& e1.getCoordinate() != CoordinateTest.c2;
+		assert e1.getCoordinate().equals(CoordinateTest.getC1())
+				&& e1.getCoordinate() != CoordinateTest.getC2();
 	}
 
 	@Test
