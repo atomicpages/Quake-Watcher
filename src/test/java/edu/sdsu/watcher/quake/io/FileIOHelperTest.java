@@ -12,14 +12,11 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import edu.sdsu.watcher.quake.Shared;
-
 public class FileIOHelperTest {
 
 	private static final String PATH = ".";
 	private static final String[] DIRS = {"testDir1", "testDir2", "testDir3"};
 	private static final String[] FILES = {"file1.txt", "file2.txt", "file3.txt"};
-	private static final String ABS_PATH = PATH + Shared.FS + DIRS[0] + Shared.FS;
 	private static Constructor<FileIOHelper> constructor;
 
 	@BeforeClass

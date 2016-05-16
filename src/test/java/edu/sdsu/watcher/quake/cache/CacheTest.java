@@ -12,7 +12,7 @@ import edu.sdsu.watcher.quake.Shared;
 
 public class CacheTest {
 
-	private static Cache c1, c2, c3;
+	private static Cache c1, c2;
 
 	static {
 		c2 = new Cache("test", Shared.RESOURCES_PATH, false);
@@ -40,12 +40,12 @@ public class CacheTest {
 
 	@Test(expected = NullPointerException.class)
 	public void testNullExtension() {
-		c3 = new Cache("test", Shared.RESOURCES_PATH, null);
+		new Cache("test", Shared.RESOURCES_PATH, null);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testEmptyExtension() {
-		c3 = new Cache("test", Shared.RESOURCES_PATH, "");
+		new Cache("test", Shared.RESOURCES_PATH, "");
 	}
 
 	@Test

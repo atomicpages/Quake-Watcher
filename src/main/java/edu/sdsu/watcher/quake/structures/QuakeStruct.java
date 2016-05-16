@@ -222,4 +222,8 @@ public class QuakeStruct {
 		return this.metadata;
 	}
 
+	public final List<Double> getBbox() {
+		return this.bbox;
+	}
+
 }

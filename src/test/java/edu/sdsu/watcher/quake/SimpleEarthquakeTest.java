@@ -5,20 +5,17 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
-import java.util.stream.Collectors;
 
 import org.junit.AfterClass;
 import org.junit.Test;
 
-import com.google.common.base.Preconditions;
 import com.google.common.io.Resources;
 
 public class SimpleEarthquakeTest {
 
 	private static SimpleEarthquake usgsLiveData = new SimpleEarthquake();
 	private static SimpleEarthquake usgsCacheLiveData = new SimpleEarthquake(true, "cache_data", false);
-	private static SimpleEarthquake usgsCacheLiveDataAlt = new SimpleEarthquake(true, "cache_data");
+//	private static SimpleEarthquake usgsCacheLiveDataAlt = new SimpleEarthquake(true, "cache_data");
 	private static SimpleEarthquake usgsCachedData = new SimpleEarthquake(new File(Resources.getResource("all_hour.json").getFile()));
 
 	@Test
@@ -93,21 +90,21 @@ public class SimpleEarthquakeTest {
 		}
 	}
 
-	private static boolean findFiles(Path dir, final String regex) {
-		Preconditions.checkNotNull(dir, regex);
-		Preconditions.checkArgument(!regex.isEmpty());
-
-		List<String> files;
-
-		try {
-//			files = Files.list(dir).filter(filter::matches).map(String::valueOf).collect(Collectors.toList());
-			files = Files.list(dir).map(String::valueOf).collect(Collectors.toList());
-			files.size();
-		} catch(IOException e) {
-			e.printStackTrace();
-		}
-
-		return false;
-	}
+//	private static boolean findFiles(Path dir, final String regex) {
+//		Preconditions.checkNotNull(dir, regex);
+//		Preconditions.checkArgument(!regex.isEmpty());
+//
+//		List<String> files;
+//
+//		try {
+////			files = Files.list(dir).filter(filter::matches).map(String::valueOf).collect(Collectors.toList());
+//			files = Files.list(dir).map(String::valueOf).collect(Collectors.toList());
+//			files.size();
+//		} catch(IOException e) {
+//			e.printStackTrace();
+//		}
+//
+//		return false;
+//	}
 
 }

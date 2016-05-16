@@ -152,13 +152,10 @@ public class Cache {
 	}
 
 	private void initialize() {
-		Path path;
 		final Path location = Paths.get(this.location);
 
 		if(this.name != null && !this.name.isEmpty()) {
-			this.path = path = Paths.get(this.location, this.name);
-		} else {
-			path = Paths.get(this.location);
+			this.path = Paths.get(this.location, this.name);
 		}
 
 		if(Files.notExists(location)) {

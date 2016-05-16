@@ -217,4 +217,19 @@ public class QuakeStructTest {
 		assert geometry.getCoordinates().get(2) == 15.06;
 	}
 
+	@Test
+	public void testGetBbox() {
+		assert struct.getBbox() != null && !struct.getBbox().isEmpty();
+	}
+
+	@Test
+	public void testBbox() {
+		assert struct.getBbox().get(0) == -121.043335;
+		assert struct.getBbox().get(1) == 33.7033333;
+		assert struct.getBbox().get(2) == 9.6;
+		assert struct.getBbox().get(3) == -116.9568333;
+		assert struct.getBbox().get(4) == 36.0444984;
+		assert struct.getBbox().get(5) == 15.06;
+	}
+
 }
