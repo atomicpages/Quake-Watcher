@@ -1,13 +1,14 @@
 package edu.sdsu.watcher.quake;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class EarthquakeTest {
 
-	static Earthquake e1, e2, e3, e4, e5, e6;
+	private static Earthquake e1, e2, e3, e4, e5, e6;
 
-	// TODO: populate with random data
-	static {
+	@BeforeClass
+	public static void setup() {
 		e1 = new Earthquake(CoordinateTest.c1, 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
 		e2 = new Earthquake(CoordinateTest.c2, 7.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 1460851117280L);
 		e3 = new Earthquake(CoordinateTest.c1, 6.8, "M 7.8 - 27km SSE of Muisne, Ecuador", "us20005j32", 123L);
@@ -23,7 +24,7 @@ public class EarthquakeTest {
 
 	@Test
 	public void testEqualsNull() {
-		assert !e1.equals(null);
+		assert e1 != null;
 	}
 
 	@Test

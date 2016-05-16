@@ -32,10 +32,10 @@ public class QuakeStruct {
 	}
 
 	public static class Metadata {
-		long generated;
-		String url, title, api;
-		short status;
-		int count;
+		private long generated;
+		private String url, title, api;
+		private short status;
+		private int count;
 
 		public final long getGenerated() {
 			return this.generated;
@@ -64,11 +64,9 @@ public class QuakeStruct {
 	}
 
 	public static class Features {
-		String type, id;
-
-		Properties properties;
-
-		Geometry geometry;
+		private String type, id;
+		private Properties properties;
+		private Geometry geometry;
 
 		public final String getType() {
 			return this.type;
@@ -87,12 +85,12 @@ public class QuakeStruct {
 		}
 
 		public static class Properties {
-			double mag, cdi, mmi, dmin, rms, gap;
-			long time, updated;
-			String place, url, detail, alert, status,
+			private double mag, cdi, mmi, dmin, rms, gap;
+			private long time, updated;
+			private String place, url, detail, alert, status,
 			net, code, ids, sources, types,
 			type, title;
-			int tz, felt, tsunami, sig, nst;
+			private int tz, felt, tsunami, sig, nst;
 
 			public final double getMag() {
 				return this.mag;
@@ -196,9 +194,8 @@ public class QuakeStruct {
 
 		}
 		public static class Geometry {
-			String type;
-
-			List<Double> coordinates = new ArrayList<>(COORD_LEN);
+			private String type;
+			private List<Double> coordinates = new ArrayList<>(COORD_LEN);
 
 			public final String getType() {
 				return this.type;

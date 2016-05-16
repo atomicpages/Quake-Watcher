@@ -131,10 +131,11 @@ public class SimpleEarthquake {
 	 * @return a list of earthquakes or an empty list if none are found.
 	 */
 	public List<Earthquake> getEarthquakes(String threshold, String time) {
-		threshold = threshold.toLowerCase();
+		String tempThreshold = threshold;
+		tempThreshold = tempThreshold.toLowerCase();
 		time = time.toLowerCase();
 
-		if(!isValidThreshold(threshold)) {
+		if(!isValidThreshold(tempThreshold)) {
 			throw new IllegalArgumentException(
 					buildErrors("Invalid threshold. Must be one of: ", SimpleEarthquake.threshold)
 			);
@@ -148,10 +149,10 @@ public class SimpleEarthquake {
 
 		try {
 			if(this.online) {
-				final String url = String.format("%s%s_%s.geojson", USGS_URL, threshold, time);
+				final String url = String.format("%s%s_%s.geojson", USGS_URL, tempThreshold, time);
 				final String json = jsonReader.get(url);
 				if(this.cacheJson) {
-					this.cache.setName(String.format("%s_%s", threshold, time));
+					this.cache.setName(String.format("%s_%s", tempThreshold, time));
 					this.cache.append(json);
 
 					// TODO: allow user to configure this

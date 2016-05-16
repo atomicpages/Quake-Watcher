@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="bc631abc-eb87-421a-ba9b-493944623fe9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java" afterPath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java" afterPath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/CacheWriter.java" afterPath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/CacheWriter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java" afterPath="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/SimpleEarthquakeTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/SimpleEarthquakeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/cache/CacheTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/cache/CacheTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/io/FileIOHelperTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/io/FileIOHelperTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/structures/QuakeStructTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/structures/QuakeStructTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/CoordinateTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/CoordinateTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/EarthquakeTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/EarthquakeTest.java" />
     </list>
     <ignored path="edu.sdsu.watcher.quake.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,22 +108,12 @@
     <favorites_list name="edu.sdsu.watcher.quake" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Cache.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FileIOHelper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/io/FileIOHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1634">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CacheTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/cache/CacheTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="277">
+              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -486,18 +476,14 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/EarthquakeService.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/EarthquakeServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/io/FileNIOHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/CacheWriter.java" />
         <option value="$PROJECT_DIR$/appveryor.yml" />
         <option value="$PROJECT_DIR$/build/libs/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/factories/DecodeJson.java" />
         <option value="$PROJECT_DIR$/codecov.yml" />
         <option value="$PROJECT_DIR$/appveyor.yml" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/EarthquakeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/CoordinateTest.java" />
         <option value="$PROJECT_DIR$/.utilities/push-javadoc-to-github.sh" />
         <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/Reader.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java" />
         <option value="$PROJECT_DIR$/.utilities/deploy-javadoc-manual.sh" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -506,11 +492,15 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/io/FileIOHelper.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/io/FileIOHelperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/structures/QuakeStructTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/SimpleEarthquakeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/cache/CacheTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/CacheWriter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/EarthquakeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/CoordinateTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java" />
       </list>
     </option>
   </component>
@@ -551,9 +541,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -574,6 +563,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -593,7 +583,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="CacheT&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/cache/CacheTest.java&#10;Cache&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java&#10;simple&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/SimpleEarthquakeTest.java&#10;q&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/structures/QuakeStructTest.java&#10;Struct&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java&#10;findFiles&#9;PSI&#9;JAVA://edu.sdsu.watcher.quake.SimpleEarthquakeTest#findFiles&#10;FileIO&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/io/FileIOHelperTest.java&#10;bui&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/build.gradle&#10;testDeleteCache&#9;PSI&#9;JAVA://edu.sdsu.watcher.quake.cache.CacheTest#testDeleteCache&#10;Decode&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/factories/DecodeJson.java&#10;jsonre&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java&#10;struct&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java" />
+    <property name="SearchEverywhereHistoryKey" value="FileIO&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/io/FileIOHelper.java&#10;Cache&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/cache/CacheWriter.java&#10;Coord&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/CoordinateTest.java&#10;Simple&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java&#10;EarthQ&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/EarthquakeTest.java&#10;CacheW&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/cache/CacheWriter.java&#10;Earth&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/EarthquakeTest.java&#10;coord&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/CoordinateTest.java&#10;quake&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java&#10;CacheT&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/cache/CacheTest.java&#10;simple&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/SimpleEarthquakeTest.java&#10;q&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/test/java/edu/sdsu/watcher/quake/structures/QuakeStructTest.java&#10;Struct&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java&#10;findFiles&#9;PSI&#9;JAVA://edu.sdsu.watcher.quake.SimpleEarthquakeTest#findFiles&#10;bui&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/build.gradle&#10;testDeleteCache&#9;PSI&#9;JAVA://edu.sdsu.watcher.quake.cache.CacheTest#testDeleteCache&#10;Decode&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/factories/DecodeJson.java&#10;jsonre&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/net/JsonReader.java&#10;struct&#9;FILE&#9;file:///Users/dennis/Documents/Development/edu.sdsu.watcher.quake/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1060,14 +1050,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31571218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32547864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31664214" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31516936" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21101573" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1076,12 +1064,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3976436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3976436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31571218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32547864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1108,7 +1098,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/CacheWriter.java</url>
-          <line>58</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
@@ -1119,7 +1109,7 @@
           <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="65" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1228,20 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/EarthquakeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/CoordinateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/stream/Collectors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21">
@@ -1306,11 +1282,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="145">
@@ -1319,12 +1290,9 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/CacheWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1332,7 +1300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1354,22 +1321,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/io/FileIOHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
-          <folding>
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2886#2887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1377,14 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="161" column="75" selection-start-line="161" selection-start-column="58" selection-end-line="161" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,9 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
-          <folding>
-            <element signature="e#290#2359#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1426,26 +1370,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/cache/CacheTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/structures/QuakeStruct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="225" column="25" selection-start-line="225" selection-start-column="25" selection-end-line="225" selection-end-column="25" />
+        <state relative-caret-position="1380">
+          <caret line="197" column="20" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/EarthquakeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/CoordinateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/SimpleEarthquake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="185" column="37" selection-start-line="185" selection-start-column="37" selection-end-line="185" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/CacheWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/cache/Cache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1634">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="227">
+          <caret line="168" column="29" selection-start-line="168" selection-start-column="29" selection-end-line="168" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/sdsu/watcher/quake/cache/CacheTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/sdsu/watcher/quake/io/FileIOHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="277">
+          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
           <folding />
         </state>
       </provider>

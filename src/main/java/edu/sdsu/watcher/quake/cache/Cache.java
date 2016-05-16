@@ -166,11 +166,13 @@ public class Cache {
 	private static String normalizeExtension(String ext) {
 //		Preconditions.checkArgument(!ext.isEmpty() && ext.matches("^\\.?\\w+"));
 
+		String tempExt = ext;
+
 		if(ext.charAt(0) != '.') {
-			ext = "." + ext;
+			tempExt = "." + ext;
 		}
 
-		return ext;
+		return tempExt;
 	}
 
 }

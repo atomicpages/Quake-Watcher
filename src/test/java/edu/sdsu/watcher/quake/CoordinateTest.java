@@ -1,13 +1,14 @@
 package edu.sdsu.watcher.quake;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class CoordinateTest {
 
-	static Coordinate c1, c2, c3, c4, c5;
+	private static Coordinate c1, c2, c3, c4, c5;
 
-	// TODO: populate with random data
-	static {
+	@BeforeClass
+	public static void setup() {
 		c1 = new Coordinate(-79.9398, 0.3715, 19.16);
 		c2 = new Coordinate(-79.9398, 0.3715, 19.16);
 		c3 = new Coordinate(79.9398, -0.3715, 17.5);
@@ -22,7 +23,7 @@ public class CoordinateTest {
 
 	@Test
 	public void testEqualsNull() {
-		assert !c1.equals(null);
+		assert c1 != null;
 	}
 
 	@Test

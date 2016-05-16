@@ -52,11 +52,12 @@ final class CacheWriter {
 	 */
 	private static void cru(Path path, StandardOpenOption mode, String content) throws IOException {
 		if(path != null && content != null && !content.isEmpty()) {
+			StandardOpenOption tempMode = mode;
 			if(!Files.exists(path)) {
-				mode = StandardOpenOption.CREATE_NEW;
+				tempMode = StandardOpenOption.CREATE_NEW;
 			}
 
-			Files.write(path, content.getBytes(), mode);
+			Files.write(path, content.getBytes(), tempMode);
 		}
 	}
 
