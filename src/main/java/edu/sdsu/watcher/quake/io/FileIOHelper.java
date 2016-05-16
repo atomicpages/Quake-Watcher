@@ -21,8 +21,12 @@ import com.google.common.base.Preconditions;
  */
 public final class FileIOHelper {
 
-	/** Private constructor so we don't instantiate the class &mdash; it's static. */
-	private FileIOHelper() {}
+	/**
+	 * Private constructor so we don't instantiate the class &mdash; it's static.
+	 */
+	private FileIOHelper() {
+		throw new UnsupportedOperationException();
+	}
 
 	/**
 	 * Creates a directory on the file system.

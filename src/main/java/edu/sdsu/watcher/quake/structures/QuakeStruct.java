@@ -218,4 +218,8 @@ public class QuakeStruct {
 		return this.features;
 	}
 
+	public final Metadata getMetadata() {
+		return this.metadata;
+	}
+
 }

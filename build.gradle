@@ -2,7 +2,7 @@ group 'quake'
 version '1.0.4'
 
 apply plugin: 'java'
-apply plugin: "jacoco"
+apply plugin: 'jacoco'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -32,10 +32,14 @@ check.dependsOn jacocoTestReport
 
 repositories {
     mavenCentral()
+//    jcenter()
 }
 
 dependencies {
     compile 'com.google.code.gson:gson:2.6.2', 'com.google.guava:guava:19.0',
             'com.squareup.okio:okio:1.7.0', 'com.squareup.okhttp3:okhttp:3.2.0'
+//    compile group: 'org.powermock', name: 'powermock-mockito-release-full', version: '1.6.4', ext: 'pom'
     testCompile group: 'junit', name: 'junit', version: '4.11'
+//            'org.mockito:mockito-core:1.+'
+
 }
