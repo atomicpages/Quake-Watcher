@@ -41,7 +41,7 @@ public final class JsonReader implements Reader {
 
 	/**
 	 * Ensures data is valid before we attempt to process it.
-	 * @param args the vargs data to check
+	 * @param args The vargs Strings to check.
 	 */
 	private static void checkArgs(final String... args) {
 		if(args.length == 0) {

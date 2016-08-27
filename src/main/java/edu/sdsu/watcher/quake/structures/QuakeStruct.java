@@ -31,6 +31,9 @@ public class QuakeStruct {
 		return InstanceHolder.instance;
 	}
 
+	/**
+	 * Maps the metadata object from the returning Json string.
+	 */
 	public static class Metadata {
 		private long generated;
 		private String url, title, api;
@@ -63,6 +66,9 @@ public class QuakeStruct {
 
 	}
 
+	/**
+	 * Maps the features object from the returning Json string.
+	 */
 	public static class Features {
 		private String type, id;
 		private Properties properties;
@@ -193,6 +199,10 @@ public class QuakeStruct {
 			}
 
 		}
+
+		/**
+		 * Maps the geometry object from the returning Json string.
+		 */
 		public static class Geometry {
 			private String type;
 			private List<Double> coordinates = new ArrayList<>(COORD_LEN);

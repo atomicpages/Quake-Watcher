@@ -17,7 +17,6 @@ An example URL can be seen here: http://earthquake.usgs.gov/earthquakes/feed/v1.
 
 ### Documentation
 * Docs can be found [here](http://atomicpages.github.io/Quake-Watcher/).
-* Docs at this time are pushed menually to the `gh-pages` branch.
 
 
 ### Sample Usage

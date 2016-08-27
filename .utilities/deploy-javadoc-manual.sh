@@ -35,7 +35,7 @@ unzip $ARCHIVE_NAME
 
 rm $ARCHIVE_NAME
 
-git add . && git add -u && git commit -m "Website at $(date)"
+git add . && git add -u && git commit -m "Docs updated at $(date)"
 
 git push origin gh-pages
 
